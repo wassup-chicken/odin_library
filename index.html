@@ -8,10 +8,78 @@
 
 </head>
 <body>
-    <h1>The Chicken Library</h1>
+    <div class="container">
+    <div class="header">
+        <h1 class="title">The Chicken Library</h1>
+    
+        <div class="newbook">
+            <button class="new" id="myBtn">New Book</button>
+        </div>
+    </div>
+        
 
-    <button id="myBtn">Open Modal</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="form">
+        <form action="#" method="#" >
+            <fieldset>
+                    <div>
+                    <label for="book_title">Title</label>
+                    <input type="text" id="book_title" name="book_title">
+                    <div class="error first_name" id="error_fname"></div>
+                    </div>
+                    <div>
+                    <label for="book_author">Author</label>
+                    <input type="text" id="book_author" name="book_author">
+                    <div class='error last_name' id="error_lname"></div>
+                    </div>
+                    <div>
+                    <label for="book_page">Pages</label>
+                    <input type="text" id="book_page" name="book_page">
+                    <div class='error email' id="error_email"></div>
+                    </div>
+                    <div>
+                    <label for="book_read">Read?</label>
+                    <select name="book_read" id="book_read">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                    <div class='error phone' id="error_phone"></div>
+                    </div>
+            </fieldset>
+                <div class="submit">
+                <button class='submitbutton' type="submit">Submit</button>
+                </div>
+        </form>
+    </div>
+    </div>
+  
+  </div>
+    <div class="projects">
+        <div class="card">
+            <span class="close">&times;</span>
+            <p class="title"><a href="https://github.com/wassup-chicken/etch-a-sketch">Title</a></p>
+            <p class="author">Author</p>
+            <p>Pages</p>
+            <p>Read?</p>
+        </div>
+        <div class="card">
+            <span class="close">&times;</span>
+            <p class="title"><a href="https://github.com/wassup-chicken/etch-a-sketch">Title</a></p>
+            <p>Author</p>
+            <p>Pages</p>
+            <p>Read?</p>
+        </div>
+    </div>
+
+</div>
 
     
+    <script src="./script/script.js"></script>
 </body>
 </html>
